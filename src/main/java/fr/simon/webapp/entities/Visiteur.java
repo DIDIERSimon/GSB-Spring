@@ -19,7 +19,9 @@ public class Visiteur {
     private String adresse;
     private String cp;
     private String ville;
-    private Date date;
+    private String login;
+    private String mdp;
+    private Date dateEmbauche;
 
     public Long getId() {
         return this.id;
@@ -69,12 +71,28 @@ public class Visiteur {
         this.ville = ville;
     }
 
+    public String getLogin() {
+        return this.login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getMdp() {
+        return this.mdp;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
+    }
+
     public Date getDate() {
-        return this.date;
+        return this.dateEmbauche;
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.dateEmbauche = date;
     }
     
     public Visiteur()
@@ -82,7 +100,7 @@ public class Visiteur {
         super();
     }
 
-    public Visiteur(Long id,String nom, String prenom, String adresse, String cp, String ville, Date date)
+    public Visiteur(Long id,String nom, String prenom, String adresse, String cp, String ville, String login, String mdp, Date date)
     {
         this.id = id;
         this.nom = nom;
@@ -90,7 +108,9 @@ public class Visiteur {
         this.adresse = adresse;
         this.cp = cp;
         this.ville = ville;
-        this.date = date;
+        this.login = login;
+        this.mdp = mdp;
+        this.dateEmbauche = date;
     }
 
     
